@@ -1,0 +1,32 @@
+{
+  "name": "walcron-microfrontend",
+  "version": "1.0.0",
+  "description": "Main start-up for microfrontend",
+  "main": "index.js",
+  "workspaces": [
+    "./wal-component",
+    "./wal-monitor"
+  ],
+  "scripts": {
+    "start": "concurrently \"cd wal-component; npm run dev\" \"cd wal-monitor; npm run dev\"",
+    "build": "concurrently \"cd wal-component; npm run build\" \"cd wal-monitor; npm run build\"",
+    "serve": "concurrently \"cd wal-component; npm run start\" \"cd wal-monitor; npm run start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoonghan/walcron-microfrontend.git"
+  },
+  "keywords": [
+    "microfrontend"
+  ],
+  "author": "walcoorperation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoonghan/walcron-microfrontend/issues"
+  },
+  "homepage": "https://github.com/yoonghan/walcron-microfrontend#readme",
+  "dependencies": {
+    "concurrently": "^8.1.0"
+  }
+}
