@@ -1,0 +1,9 @@
+[submodule "walcron-microfrontend-container"]
+	path = walcron-microfrontend-container
+	url = https://github.com/yoonghan/walcron-microfrontend-container.git
+[submodule "walcron-microfrontend-shared"]
+	path = walcron-microfrontend-shared
+	url = https://github.com/yoonghan/walcron-microfrontend-shared.git
+[submodule "walcron-microfrontend-profiler"]
+	path = walcron-microfrontend-profiler
+	url = https://github.com/yoonghan/walcron-microfrontend-profiler.git
