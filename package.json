@@ -28,5 +28,9 @@
   "homepage": "https://github.com/yoonghan/walcron-microfrontend#readme",
   "dependencies": {
     "concurrently": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "vite-plugin-dts": "^2.3.0"
   }
 }
