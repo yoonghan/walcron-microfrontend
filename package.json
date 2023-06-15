@@ -4,13 +4,14 @@
   "description": "Main start-up for microfrontend",
   "main": "index.js",
   "workspaces": [
-    "./walcron-microfrontend-visualizer",
-    "./walcron-microfrontend-monitor"
+    "./profiler",
+    "./container",
+    "./shared"
   ],
   "scripts": {
-    "start": "concurrently \"cd walcron-microfrontend-visualizer; npm run dev\" \"cd walcron-microfrontend-monitor; npm run dev\"",
-    "build": "concurrently \"cd walcron-microfrontend-visualizer; npm run build\" \"cd walcron-microfrontend-monitor; npm run build\"",
-    "serve": "concurrently \"cd walcron-microfrontend-visualizer; npm run start\" \"cd walcron-microfrontend-monitor; npm run start\"",
+    "start": "concurrently \"cd profiler; npm run dev\" \"cd container; npm run dev\"",
+    "build": "concurrently \"cd profiler; npm run build\" \"cd container; npm run build\"",
+    "serve": "concurrently \"cd profiler; npm run start\" \"cd container; npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
