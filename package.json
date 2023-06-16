@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "Main start-up for microfrontend",
   "main": "index.js",
-  "workspaces": [
-    "./profiler",
-    "./container",
-    "./shared-component"
-  ],
+  "workspaces": [],
   "scripts": {
     "start": "concurrently \"cd profiler; npm run dev\" \"cd container; npm run dev\"",
     "build": "concurrently \"cd profiler; npm run build\" \"cd container; npm run build\"",
