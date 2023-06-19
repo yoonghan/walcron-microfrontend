@@ -5,7 +5,7 @@
   "main": "index.js",
   "workspaces": [],
   "scripts": {
-    "start": "concurrently \"cd profiler; npm run dev\" \"cd container; npm run dev\"",
+    "start": "concurrently \"cd profiler; npm run preview\" \"cd container; npm run dev\"",
     "build": "concurrently \"cd profiler; npm run build\" \"cd container; npm run build\"",
     "serve": "concurrently \"cd profiler; npm run start\" \"cd container; npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
